@@ -1,7 +1,7 @@
-//import Button from 'react-bootstrap/Button';
 import Form from "react-bootstrap/Form";
-
+//Billing is component which has a form to be filled by the user which takes inputs like name , email , address etc
 function Billing() {
+  //handleclick is a fuction which will be rendered on clicking the checkout button and an alert will pop
   const handleClick = () => {
     window.alert("Order Placed");
   };

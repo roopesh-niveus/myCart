@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import "./product.css";
+/*
+It is component wich displays all the products in the wishlistitems state of App.js
+It takes all the products as props from App.js
+On clicking the addtocart button calls addToCart function of App.js through props
+On clicking the aremove button calls removeFromwishlist function of App.js through props
+*/
 class Wishlist extends Component {
   render() {
     return (

@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { FaShoppingCart } from "react-icons/fa";
 import "./product.css";
-
+// header is a navigation component which sets the path to navigate to different components
 export default class Header extends Component {
   render() {
     return (

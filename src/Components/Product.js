@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "./product.css";
-
+/*
+It is component wich displays all the products in the product state of App.js
+It takes all the products as props from App.js
+On clicking the addtocart button calls addToCart function of App.js through props
+On clicking the addtowishlist button calls addTowishlist function of App.js through props
+*/
 class Product extends Component {
   render() {
     return (

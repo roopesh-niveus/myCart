@@ -11,6 +11,7 @@ import Login from "./Components/Login";
 class App extends Component {
   constructor(props) {
     super(props);
+    //state having product,caritems and widhlistitems
     this.state = {
       products: [
         {
@@ -67,6 +68,7 @@ class App extends Component {
       login: false,
     };
   }
+  //function to add product to cart using findIndex and push 
   addToCart = (product) => {
     const cartItems = [...this.state.cartItems];
     const index = cartItems.findIndex((item) => item.id === product.id);
@@ -78,6 +80,7 @@ class App extends Component {
     this.setState({ cartItems });
     console.log({ cartItems });
   };
+  //function to remove a product from cart using findIndex and splice
   removeFromCart = (product) => {
     const cartItems = [...this.state.cartItems];
     const index = cartItems.findIndex((item) => item.id === product.id);
@@ -90,6 +93,8 @@ class App extends Component {
       this.setState({ cartItems });
     }
   };
+
+  //function to add product to wishlist using findIndex and push 
   addToWishlist = (product) => {
     const wishlistItems = [...this.state.wishlistItems];
     const index = wishlistItems.findIndex((item) => item.id === product.id);
@@ -98,6 +103,7 @@ class App extends Component {
     }
     this.setState({ wishlistItems });
   };
+  //function to remove a product from wishlist using findIndex and splice
   removeFromWishlist = (product) => {
     const wishlistItems = [...this.state.wishlistItems];
     const index = wishlistItems.findIndex((item) => item.id === product.id);
@@ -106,7 +112,7 @@ class App extends Component {
       this.setState({ wishlistItems });
     }
   };
-
+//rendering other components using routing
   render() {
     return (
       <>
@@ -117,6 +123,7 @@ class App extends Component {
               exact
               path="/"
               element={
+                //Rendering product component with arguments product state and addTOCart & addToWishlist functions as props
                 <Product
                   products={this.state.products}
                   addToCart={this.addToCart}
@@ -128,6 +135,7 @@ class App extends Component {
               exact
               path="/cart"
               element={
+                //Rendering cart component with arguments cartItem state and addTOCart & removeFrom Cart functions as props
                 <Cart
                   cartItems={this.state.cartItems}
                   removeFromCart={this.removeFromCart}
@@ -139,6 +147,7 @@ class App extends Component {
               exact
               path="/wishlist"
               element={
+                //Rendering wishlist component with arguments wishlistitems state and addTOCart & removeFromWishlist functions as props
                 <Wishlist
                   wishlistItems={this.state.wishlistItems}
                   removeFromWishlist={this.removeFromWishlist}
@@ -149,9 +158,13 @@ class App extends Component {
             <Route
               exact
               path="/checkout"
-              element={<CheckOut cartItems={this.state.cartItems} />}
+              element={
+                //Rendering Checkout component with argument cartItems as props
+              <CheckOut cartItems={this.state.cartItems} />}
             ></Route>
-            <Route exact path="/login" element={<Login />}></Route>
+            <Route exact path="/login" element={
+            //Rendering Login component
+            <Login />}></Route>
           </Routes>
         </BrowserRouter>
         <div></div>

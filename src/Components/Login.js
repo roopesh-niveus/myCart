@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./product.css";
+//This is a login page component 
 class Login extends Component {
   render() {
     return (
