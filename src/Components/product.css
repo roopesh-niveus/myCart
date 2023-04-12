@@ -1,0 +1,258 @@
+.product{
+    border-radius:15px;
+    width:33%px;
+    height: 600px;
+    margin:100;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.product-img{
+    width :350px;
+    height: 450px;
+    margin-top: 2rem;
+}
+.product-desc{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+.product-hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.addtocart{
+    appearance: none;
+    background-color: darkblue;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Robert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0;
+    min-height: 35px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    width: 75%;
+    will-change: trasform;
+}
+.checkoutdiv{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+.checkout{
+        appearance: none;
+        background-color: darkblue;
+        border: 2px solid #1a1a1a;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #ffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Robert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 600;
+        margin: 0;
+        margin-top: 20px;
+        min-height: 35px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        width: 30%;
+        will-change: trasform;
+}
+.remove{
+    appearance: none;
+    background-color: darkblue;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Robert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0;
+    min-height: 35px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: trasform;
+}
+.addtocart-hover{
+    box-shadow: rgba(0, 0,0, 0.25) 0 8px 15px;
+}
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.wishbtn{
+    width: 25%;
+    border: none;
+    border-radius: 15px;
+    border: 2px solid #1a1a1a;
+    margin-left: 0.1rem;
+}
+@media screen and (min-width: 775px){.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: auto;
+}
+}
+@media screen and (max-width: 774px){.product{
+    display: grid;
+    grid-template-columns:1fr;
+    place-items: center;
+    height: auto;
+}
+
+}
+@media screen and (min-width:1180px) {.product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+    
+}
+@media screen and (min-width:2560px) {.product{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+    
+}
+@media screen and (min-width:1256px) {.product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+    
+}
+@media screen and (min-width:1700px) {.product{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+    
+}
+.plusminus{
+    appearance: none;
+    background-color: darkblue;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Robert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0;
+    height: 5px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    width: 20%;
+    padding-bottom:1.3rem;
+    padding-top: 0.2rem;
+    will-change: trasform;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.quant{
+    font-size: larger;
+    font-weight: bolder;
+}
+.navigation{
+    margin-right: 1rem;
+}
+
+.coproduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.coproduct-img{
+    width :180px;
+    margin-left: 30px;
+    height: inherit;
+}
+.coproduct-desc{
+    margin-left: 40px;
+    width: 100%;
+    font-size: 30px;
+}
+.total{
+    font-size: 30px;
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+
+}
+.linkbtn{
+    color: aliceblue;
+}
+
+.placeOrder{
+    appearance: none;
+    background-color: darkblue;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Robert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 20px;
+    min-height: 35px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    width: 20%;
+    will-change: trasform;
+}
+.logdiv{
+    margin: 1rem;
+    margin-top: 3rem;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
